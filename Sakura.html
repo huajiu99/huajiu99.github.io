@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sakura http://92sakura.com/Sakura/</title>
+        <link rel="shortcut icon" href="static/css/folder.png"> <!-- 网站LOGO -->
+        <link rel="stylesheet" href="static/css/bootstrap.min1.css"> <!-- CSS基本库 -->
+        <link rel="stylesheet" href="static/css/font-awesome.min.css"> <!-- 网站图标CSS式样 -->
+        <link rel="stylesheet" href="static/css/style1.css"> <!-- 网站主要式样 -->
+        <link rel="stylesheet" href="static/css/prism.css"> <!-- 代码高亮式样 -->
+        <script src="static/js/jquery.min.js"></script> <!-- JS基本库 -->
+		<script src="static/js/bootstrap.min.js"></script> <!-- JS基本库 -->
+		<script src="static/js/prism.js"></script> <!-- 代码高亮JS依赖 -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        		<script type="text/JavaScript">
+// 收藏本站
+		function AddFavorite(title, url) {
+			try {
+				window.external.addFavorite(url, title);
+			}
+			catch (e) {
+				try {
+					window.sidebar.addPanel(title, url, "");
+				}
+				catch (e) {
+					alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+				}
+			}
+		}
+</script>
+        <style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+        </style>
+</head>
+    <body>
+        <div id="page-navbar" class="path-top navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                                <p class="navbar-text">
+                                                                        DOUBI Soft                                                            </p>
+            </div>
+        </div>
+        <div class="path-announcement navbar navbar-default navbar-fixed-top">
+            <div class="path-announcement2 container">
+                <!-- 顶部公告栏 -->
+		    <p class="style1">Welcome home,版本云更新，下载就是最新的,无需在意上传时间,觉得下载的慢的，请自行备份</p>
+            	<!-- 顶部公告栏 -->
+            </div>
+        </div>
+		<div class="container" id="container_top">
+		<div class="page-content container" id="container_page">
+            <!--本文件可以放置 统计代码等。-->
+                        <div id="directory-list-header">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6 col-xs-10">文件</div>
+                    <div class="col-md-2 col-sm-2 col-xs-2 text-right">大小</div>
+                    <div class="col-md-3 col-sm-4 hidden-xs text-right">最后修改时间</div>
+                </div>
+            </div>
+            <ul id="directory-listing" class="nav nav-pills nav-stacked">
+                                    <li data-name="Sakura.exe" data-href="Sakura.exe">
+                        <a href="Sakura.exe" class="clearfix" data-name="Sakura.exe">
+                            <div class="row">
+                                <span class="file-name col-md-7 col-sm-6 col-xs-9">
+                                    <i class="fa fa-list-alt fa-fw"></i>
+                                    Sakura.exe                                </span>
+                                <span class="file-size col-md-2 col-sm-2 col-xs-3 text-right">
+                                    16.43MB                                </span>
+                                <span class="file-modified col-md-3 col-sm-4 hidden-xs text-right">
+                                    2023-05-22 14:17:03                                </span>
+                            </div>
+                        </a>
+                                                                    </li>
+                                    <li data-name="Skura樱花字体，菜单问号安装.ttf" data-href="Skura%E6%A8%B1%E8%8A%B1%E5%AD%97%E4%BD%93%EF%BC%8C%E8%8F%9C%E5%8D%95%E9%97%AE%E5%8F%B7%E5%AE%89%E8%A3%85.ttf">
+                        <a href="Skura%E6%A8%B1%E8%8A%B1%E5%AD%97%E4%BD%93%EF%BC%8C%E8%8F%9C%E5%8D%95%E9%97%AE%E5%8F%B7%E5%AE%89%E8%A3%85.ttf" class="clearfix" data-name="Skura樱花字体，菜单问号安装.ttf">
+                            <div class="row">
+                                <span class="file-name col-md-7 col-sm-6 col-xs-9">
+                                    <i class="fa fa-font fa-fw"></i>
+                                    Skura樱花字体，菜单问号安装.ttf                                </span>
+                                <span class="file-size col-md-2 col-sm-2 col-xs-3 text-right">
+                                    9.58MB                                </span>
+                                <span class="file-modified col-md-3 col-sm-4 hidden-xs text-right">
+                                    2023-04-06 02:56:56                                </span>
+                            </div>
+                        </a>
+                                                                    </li>
+                            </ul>
+        </div>
+		<!-- READMNE 说明 -->
+				<!-- READMNE 说明 -->
+        </div>
+      <hr style="margin-bottom: 0;margin-top: 40px;">
+      <footer class="container">
+  <div class="footer">
+ © 2015-2023 <a href="index.html" target="_blank">Sakura</a> . All rights reserved.
+   </div>
+</footer>
+<script type="text/javascript">
+window.onload=function(){  
+	changeDivHeight();  
+}  
+window.onresize=function(){  
+	changeDivHeight();  
+}  
+function changeDivHeight(){
+	if(document.getElementById("container_readme"))
+	{
+		container_readme.style.marginBottom = '0';
+	}
+	
+  	ScrollHeight_body=document.body.scrollHeight-1;
+	InnerHeight_window=window.innerHeight;
+	ClientHeight_top=container_top.clientHeight+60;
+	
+	//console.log(ScrollHeight_body, InnerHeight_window, container_top.clientHeight, ClientHeight_top, InnerHeight_window);
+	
+	if (ScrollHeight_body > InnerHeight_window)
+	{
+		if (ClientHeight_top > InnerHeight_window)
+		{
+			container_top.style.marginBottom = '0';
+			container_page.style.marginBottom = '0';
+			if(document.getElementById("container_readme"))
+			{
+				container_readme.style.marginTop = '20px';
+			}
+		}
+		else
+		{
+			container_top.style.marginBottom = '';
+			container_page.style.marginBottom = '';
+			if(document.getElementById("container_readme"))
+			{
+				container_readme.style.marginTop = '';
+			}
+		}
+	}
+}
+</script>
+    </body>
+</html>
