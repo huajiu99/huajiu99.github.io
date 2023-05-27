@@ -215,6 +215,17 @@
                                 <h4>建议、BUG反馈</h4>
                       <textarea id="inp1" cols="40" rows="3" placeholder="请输入"></textarea>
                       <button onclick=“add（）；”> 提交留言</button>
+                                    <script type ="text/javascript">
+        var inp1=document.getElementById(inp1);
+             function add(){
+                   var ol=document.createElement("ol");
+                   if(inp1.value=""){
+                   ol.innerText=inp1.value;
+                   }else{
+                       alert("输入留言为空！")；
+                   }
+                   
+       }
                              <hr>
                              <div>
                                  <li id="li">
@@ -294,16 +305,6 @@
 <!--End Google Map APi-->
 
 </body>
-       <script type ="text/javascript">
-        var inp1=document.getElementById(inp1);
-             function add(){
-                   var ol=document.createElement("ol");
-                   if(inp1.value=""){
-                   ol.innerText=inp1.value;
-                   }else{
-                       alert("输入留言为空！")；
-                   }
-                   
-       }
+
 </script>
 </html>
